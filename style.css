@@ -1,11 +1,14 @@
 body{
+    background-color: #EDEDED;
     margin: 0;
-    color: white;
-    background-color: black;
 }
 a{
     color: inherit;
     text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 .clearfix::after{
     content: '';
@@ -13,9 +16,16 @@ a{
     clear: both;
 }
 .topNavBar{
-    margin: 22px 16px;
+    width: 100%;
+    margin: 22px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-.topNavBar > .logo{
+.topNavBar-inner{
+    margin: 0 16px;
+}
+.topNavBar .logo{
     float: left;
     font-family: Arial Black;
     font-size: 24px;
@@ -23,24 +33,24 @@ a{
     color: #919499;
     padding: 1px 0;
 }
-.topNavBar > .logo > .RS{
+.topNavBar .logo > .RS{
     color: #E15E63;
     padding-right: 4px;
 }
-.topNavBar > nav{
+.topNavBar nav{
     float: right;
     padding-top: 5px;
 }
-.topNavBar > nav > ul{
+.topNavBar nav > ul{
     margin: 0;
     padding: 0;
 }
-.topNavBar > nav > ul > li{
+.topNavBar nav > ul > li{
     float: left;
     list-style-type: none;
     margin: 0 17px;
 }
-.topNavBar > nav > ul > li > a{
+.topNavBar nav > ul > li > a{
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     padding: 5px 0;
@@ -49,7 +59,171 @@ a{
     color: #AFAFB0;
     display: block;
 }
-.topNavBar > nav > ul > li > a:hover{
+.topNavBar nav > ul > li > a:hover{
     border-top: 3px solid transparent;
-    border-bottom: 3px solid #E15E63;
+    border-bottom: 3px solid rgb(235, 57, 66);
 }
+.banner{
+    height: 515px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2016/02/rs-cover-2-2-1-1.jpg");
+}
+.banner .bg-color{
+    height: 515px;
+    background-color: rgba(44,51,64,0.8);
+}
+.usercard{
+    max-width: 940px;
+    margin: 0 auto;
+    background-color:  white;
+}
+.usercard .profile{
+    padding: 57px 50px 15px 50px;
+}
+.usercard .picture{  
+    float: left;
+    margin-right: 65px;
+}
+.usercard .text{
+    float: left;
+    width: 470px;
+}
+.usercard .text .welcome{
+    color: white;
+    background-color: #e8676b;
+    display: inline-block;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    position: relative;
+    margin-bottom: 25px;
+}
+.text .welcome .triangle{
+    width: 0;
+    border: 8px solid transparent;
+    border-left-color: #e8676b;
+    border-top-width: 0;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 5px;
+}
+.text h1{
+    margin-bottom: 5px;
+}
+.text hr{
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #DEDEDE;
+}
+.text dt,
+.text dd{
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.text dt{
+    float: left;
+    width: 30%;
+}
+.text dd{
+    width: 70%;
+    color: #9da0a7;
+}
+.usercard .media{
+    background-color: #e8676b;
+    padding: 15px 0;
+    text-align: center;
+}
+.media svg{
+    fill: white;
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+}
+.media a{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    margin: 0 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.media a:hover{
+    background-color: #CF5D5F;
+}
+main{
+    margin-top: -345px;
+}
+.download-button{
+    text-align: center;
+}
+.download-button .button{
+    margin: 40px auto;
+    border: 1px solid #C7C9CB;
+    padding: 15px 85px;
+    display: inline-block;
+    line-height: 30px;
+    font-weight: bold;
+    color: #656A72;
+    border-radius: 2%;
+    transition: box-shadow 0.5s;
+}
+.download-button .button:hover{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 
+                0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.95;
+}
+main > p{
+    max-width: 740px;
+    padding: 0 100px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: center;
+}
+#skills{
+    max-width: 940px;
+    margin: 50px auto;
+}
+#skills > h2{
+    text-align: center;
+    color: #373D49;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+#skills > ul{
+    background-color: #FFFFFF;
+    list-style: none;
+    padding: 40px 30px 0px 30px;
+}
+#skills > ul > li{
+    float: left;
+    width: 46%;
+    margin-bottom: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#skills > ul > li > h3{
+    color: rgb(72, 73, 77);
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+#skills ul li .progressbar{
+
+    background-color: #F9DFE0;
+    width: 100%;
+}
+#skills ul li .progress{
+    height: 5px;
+    background-color: #E35D64;
+    width: 80%;
+}
+#protfolio
+

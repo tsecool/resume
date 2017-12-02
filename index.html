@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="./style.css">
     <title>个人简历</title>
 </head>
+<style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+</style>
+<script src="//at.alicdn.com/t/font_489407_hi5as36r6jgrdx6r.js"></script>
 <body>
-    <div class="topNavBar clearfix">
+    <div class="topNavBar">
+    <div class="topNavBar-inner clearfix">
       <a class="logo" href="#">
           <span class="RS">RS</span><span class="card">card</span>
         </a>
@@ -24,64 +34,100 @@
         </ul>
       </nav>
     </div>
+    </div>
 
-    <div class="banner" stytle="background-image= url(#)"></div>
+    <div class="banner">
+        <div class="bg-color">            
+        </div>
+    </div>
 
     <main>
-      <div class="card">
-        <div class="profile">
-          <div class="picture">
-            <img src="" alt="头像">
-          </div>
-          <div class="txet">
-            <span class="welcome">HELLO</span>
-            <h1>谢帅</h1>
-            <p draggable="true">前端开发工程师</p>
-            <hr>
-            <dl>
-                <dt>年龄</dt>
-                <dd>22</dd>
-                <dt>学校</dt>
-                <dd>重庆科创职业学院</dd>
-                <dt>所在城市</dt>
-                <dd>重庆</dd>
-                <dt>邮箱</dt>
-                <dd>1192707546@qq.com</dd>
-                <dt>电话</dt>
-                <dd>13635376171</dd>
-            </dl>
-          </div>
+      <div class="usercard">
+        <div class="profile clearfix">
+            <div class="picture">
+                 <img src="./image/picture.jpg" alt="头像">
+            </div>
+            <div class="text">
+                <span class="welcome">HELLO
+                    <span class="triangle"></span>
+                </span>
+                <h1>谢帅</h1>
+                <p>前端开发工程师</p>
+                <hr>
+                <dl>
+                    <dt>年龄</dt>
+                    <dd>22</dd>
+                    <dt>学校</dt>
+                    <dd>重庆科创职业学院</dd>
+                    <dt>所在城市</dt>
+                    <dd>重庆</dd>
+                    <dt>邮箱</dt>
+                    <dd>1192707546@qq.com</dd>
+                    <dt>电话</dt>
+                    <dd>13635376171</dd>
+                </dl>
+            </div>
         </div>
         <footer class="media">
-            <a href="#"><img src="#" alt="..."></a>
-            <a href="#"><img src="#" alt="..."></a>
-            <a href="#"><img src="#" alt="..."></a>
-            <a href="#"><img src="#" alt="..."></a>
-            <a href="#"><img src="#" alt="..."></a>
-            <a href="#"><img src="#" alt="..."></a>
+            <a href="#"><svg class="icon-wb" aria-hidden="true">
+                <use xlink:href="#icon-wb"></use>
+            </svg></a>
+            <a href="#"><svg class="icon-matuwang-zhihufangxingdianji" aria-hidden="true">
+                <use xlink:href="#icon-matuwang-zhihufangxingdianji"></use>
+            </svg></a>
+            <a href="#"><svg class="icon-icongithub" aria-hidden="true">
+                <use xlink:href="#icon-icongithub"></use>
+            </svg></a>
+            <a href="#"><svg class="icon-twitter" aria-hidden="true">
+                <use xlink:href="#icon-twitter"></use>
+            </svg></a>
         </footer>
       </div>
-
-        <a class="button">下载PDF简历</a>
-
-        <p>你好，我是谢帅，一名前端学习者。爱好于各种酷炫的页面效果，并且希望能用各种技术去开发出来；<br>
-           不过现在水平有限，正在努力学习中，希望我能慢慢体会其中的乐趣，收获成果。
+        <div class="download-button">
+        <a class="button" href="#" target="_blank" download>下载PDF简历</a>
+        </div>
+        <p>你好，我是谢帅，一名前端学习者。爱好于各种酷炫的页面效果，并且希望能用各种技术去开发出来;
+            不过现在水平有限，正在努力学习中，希望我能慢慢体会其中的乐趣，收获成果。
         </p>
     </main>
 
-    <section>
+    <section id="skills" class="clearfix">
         <h2>技能</h2>
-        <ol>
-            <li>HTML5 &amp; CSS3</li>
-            <li>javascript</li>
-            <li>jQuery</li>
-            <li>vue</li>
-            <li>React</li>
-            <li>HTTP</li>
+        <ul class="clearfix">
+            <li><h3>HTML5 &amp; CSS3</h3>
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li><h3>javascript</h3>
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li><h3>jQuery</h3>
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li><h3>vue</h3>
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li><h3>React</h3>
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li><h3>HTTP</h3>
+                <div class="progressbar">
+                    <div class="progress"></div>
+                </div>
+            </li>
         </ol>
     </section>
     
-    <section>
+    <section id="protfolio">
         <h2>作品集</h2>
         <nav>
         <ul>
