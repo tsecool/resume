@@ -84,6 +84,7 @@ a{
 .usercard .picture{  
     float: left;
     margin-right: 65px;
+    margin-bottom: 38px;
 }
 .usercard .text{
     float: left;
